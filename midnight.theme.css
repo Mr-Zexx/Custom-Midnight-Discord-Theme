@@ -1,0 +1,226 @@
+/**
+ * @name midnight
+ * @description A darkened discord theme.
+ * @author refact0r
+ * @version 1.6.2
+ * @source https://github.com/refact0r/midnight-discord
+ * @authorId 508863359777505290
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
+.codeContainer_f8f345,
+.before_inlineCode__48f7c,
+.after_inlineCode__59586 {
+  background-color: var(--textarea-block-color);
+  border-radius: var(--card-radius);
+}
+
+.codeContainer_f8f345 {
+  color: var(--textarea-block-text-color);
+  border-radius: var(--card-radius);
+}
+
+.optionPill__618f2.selectedPill_b305ee {
+  border-color: hsl(var(--accent-hsl)) !important;
+}
+.optionPill__618f2.erroredPill_c6591b {
+  border-color: hsl(var(--alert-hsl)) !important;
+}
+.optionPill__618f2 .optionPillKey__0d1a4 {
+  background-color: var(--textarea-block-color) !important;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.markup_a7e664 code {
+  background-color: var(--textarea-block-color);
+  border-radius: var(--card-radius);
+  border: none;
+}
+
+.spoilerMarkdownContent__5c448 {
+  background-color: var(--textarea-block-color);
+}
+
+.upload_c98ecb {
+  background-color: var(--message-color);
+  border-radius: var(--message-radius);
+}
+
+.wrapper_a62503 {
+  margin-left: 68px;
+  margin-right: 16px;
+  background-color: var(--message-color) !important;
+  border-radius: var(--message-radius);
+}
+
+.content__7191e {
+  width: 120px;
+  padding: 2px 0;
+  background-color: var(--message-color);
+  text-align: center;
+}
+
+.messageGroupWrapper__1fce2 .wrapper_a62503 {
+  margin-left: 56px !important;
+  margin-right: 16px !important;
+  background-color: var(--message-color);
+  border-radius: var(--message-radius);
+}
+
+.avatar__08316 {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -50px;
+  margin-top: 0;
+}
+
+.avatarDecoration__8a0c2 {
+  top: -2px;
+  left: -54px;
+}
+
+.a11y-font-scaled-down .avatar__08316:not(.compact_eda3c8) {
+  top: 0;
+  left: -50px;
+}
+
+--------------------------------------------------------------
+.wrapper_a62503 {
+  margin-left: 68px;
+  margin-right: 16px;
+
+}
+.wrapper_a62503:not(.groupStart__7b93c), .wrapper_a62503.compact_eda3c8 {
+  margin-top: 2px;
+}
+.wrapper_a62503.cozy_f5c119, .wrapper_a62503.compact_eda3c8 {
+  padding: var(--message-padding-top) var(--message-padding-side) !important;
+  padding-right: 8px !important;
+  border: 2px solid transparent;
+}
+
+.wrapper_a62503.cozy_f5c119 .timestamp_c79dd2.alt__6c563 {
+  left: -62px;
+}
+
+
+.codeContainer_f8f345 {
+	border-radius: var(--roundness-xl);
+    border: 2px solid transparent;
+	background-color: hsl(220, 15%, 10%);
+	margin-up: 6px;
+	margin-bottom: 10px;
+}
+
+----------------------------------------------------------------------------------------
+.markup_a7e664 .wrapper__53064{
+	padding: -60px;
+}
+
+.newBadge__93a46{
+	background-color: var(--text-2);
+}
+
+.hasThread__44ae4:after {
+  display: none;
+}
+----------------------------------------------------------------------------------------
+.animatedContainer_fd6364 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+----------------------------------------------------------------------------------------
+.embed_d3cbe3 { position: relative; }
+.embed_d3cbe3::after {
+    content: '';
+    position: absolute;
+    top: 0px; left: -4px; bottom: 0px;
+    width: 100%;
+    border-radius: var(--roundness-m);
+    border: 4px solid transparent;
+    border-left-color: inherit;
+    filter: blur(15px);
+    z-index: -1;
+}
+----------------------------------------------------------------------------------------
+/* customize things here */
+:root {
+	/* font, change to 'gg sans' for default discord font*/
+	--font: 'comfortaa';
+
+	/* top left corner text */
+	--corner-text: 'Midnight';
+
+	/* color of status indicators and window controls */
+	--online-indicator: var(--accent-2); /* change to #23a55a for default green */
+	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
+	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
+	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
+
+	/* accent colors */
+	--accent-1: hsl(180, 100%, 50%); /* links */
+	--accent-2: hsl(180, 100%, 50%); /* general unread/mention elements */
+	--accent-3: hsl(190, 80%, 50%); /* accent buttons */
+	--accent-4: hsl(190, 100%, 50%); /* accent buttons when hovered */
+	--accent-5: hsl(180, 100%, 50%); /* accent buttons when clicked */
+	--mention: hsla(180, 100%, 50%, 0.1); /* mentions & mention messages */
+	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
+
+	/* text colors */
+	--text-0: white; /* text on colored elements */
+	--text-1: var(--text-2); /* other normally white text */
+	--text-2: hsl(220, 25%, 100%); /* headings and important text */
+	--text-3: hsl(220, 15%, 80%); /* normal text */
+	--text-4: hsl(220, 15%, 60%); /* icon buttons and channels */
+	--text-5: hsl(220, 15%, 40%); /* muted channels/chats and timestamps */
+	--textarea-block-color: rgba(20,22,26,1);
+	--spacing: 4px;
+	--message-padding-side: 10px;
+	--message-padding-top: 0px;
+
+	/* background and dark colors */
+	--bg-1: hsl(220, 15%, 20%); /* dark buttons when clicked */
+	--bg-2: hsl(220, 15%, 16%); /* dark buttons */
+	--bg-3: hsl(220, 15%, 13%); /* spacing, secondary elements */
+	--bg-4: hsl(220, 15%, 10%); /* main background color */
+	--hover: hsla(220, 15%, 10%, 0.1); /* channels and buttons when hovered */
+	--active: hsla(220, 20%, 40%, 0.2); /* channels and buttons when clicked or selected */
+	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
+	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.4s ease; /* moon icon spin */
+	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+
+	/* corner roundness (border-radius) */
+	--roundness-xl: 16px; /* roundness of big panel outer corners */
+	--roundness-l: 10px; /* popout panels */
+	--roundness-m: 16px; /* smaller panels, images, embeds */
+	--roundness-s: 10px; /* members, settings inputs */
+	--roundness-xs: 6px; /* channels, buttons */
+	--roundness-xxs: 8px; /* searchbar, small elements */
+
+	/* direct messages moon icon */
+	/* change to block to show, none to hide */
+	--discord-icon: block; /* discord icon */
+	--moon-icon: none; /* moon icon */
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
+	--moon-icon-size: auto;
+
+	/* filter uncolorable elements to fit theme */
+	/* (just set to none, they're too much work to configure) */
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+}
